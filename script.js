@@ -1,13 +1,12 @@
-const botaoAbrir = document.querySelector(".header > button")
-const botaoFechar= document.querySelector(".header nav button")
+const botaoAbrir = document.querySelector("header > button")
+const botaoFechar = document.querySelector("header nav button")
 
 const body = document.querySelector("body")
-const nav = document.querySelector(".header .mobile")
+const nav = document.querySelector("header .mobile ")
 
 
-
-botaoAbrir.eddEventListener('click', abrirMenu)
-botaoFechar.eddEventListener('click', fecharMenu) 
+botaoAbrir.addEventListener('click', abrirMenu )
+botaoFechar.addEventListener('click', fecharMenu)
 
 function abrirMenu() {
     body.classList.add("escurecer")
@@ -16,5 +15,5 @@ function abrirMenu() {
 
 function fecharMenu() {
     body.classList.remove("escurecer")
-    nav.classList.remove ("abrir")
+    nav.classList.remove("abrir")
 }
